@@ -1,5 +1,93 @@
 var restaurantBillData = {
-    "template-2": `<div data-tm="template-2" class="templates template-2 rest-tm-container"><h6>Coming soon !!</h6></div>`,
+    "template-1": `  <div data-tm="template-1" class="templates template-1 rest-tm-container d-none">
+    <div class="restaurant-slip">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <p>WELCOME!!!</p>
+                <p><span data-tm="rest-name">WEST HOLLYWOOD</span> </p>
+                <p><span data-tm="rest-add">7677 state Los Angeles</span></p>
+                <div com-tm="gstno" class="d-none">
+                    <p data-tm="gstno-gst-check"><span data-tm="gstno-gst-field">GSTIN</span> : <span data-tm="gstno-gst-value">H75667MQ887754</span></p>
+                    <p data-tm="gstno-fss-check"><span data-tm="gstno-fss-field">FSSAI</span> : <span data-tm="gstno-fss-value">H75667MQ887754</span></p>
+                </div>
+
+                <p>Original Receipt</p>
+            </div>
+
+
+            <div class="col-7 section-two">
+                <p>Date: <span data-tm="bill-date">13 Dec 2023</span></p>
+                <div com-tm="cus-field">
+                    <div class="com-tm-body">
+                        <p><span data-tm="cus-field-name">Customer Name</span>: <span
+                                data-tm="cus-field-value">Mark</span></p>
+                    </div>
+                </div>
+                <p>Table: #<span data-tm="table-no">45</span></p>
+                <p>Receipt No.: <span data-tm="invoice-no">3574</span></p>
+            </div>
+            <div class="col-5 text-end section-two">
+                <p>Time: <span data-tm="bill-time"></span></p>
+            </div>
+
+            <div com-tm="rest-items" class="mt-4">
+                <div class="me-0 mb-1 row">
+                    <div class="col-4 pe-0">
+                        <p>Description</p>
+                    </div>
+                    <div class="col-2">
+                        <p>Qty</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Price</p>
+                    </div>
+                    <div class="col-3 pe-0 ps-0 text-end">
+                        <p>Total</p>
+                    </div>
+                </div>
+                <div class="row item item-1">
+                    <div class="col-4">
+                        <span data-tm="item-name">Coffee</span>
+                    </div>
+                    <div class="col-2">
+                        <span data-tm="item-qt">2</span>
+                    </div>
+                    <div class="col-3">
+                        <span class="c-curr"></span><span data-tm="item-price">200.00</span>
+                    </div>
+                    <div class="col-3 pe-0 ps-0 text-end">
+                        <span class="c-curr"></span><span data-tm="item-tot">400.00</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 text-end mt-4">
+                <p><span class="tax-n">Sub Total: </span> <span class="c-curr"></span><span
+                        data-tm="sub-total">400.00</span></p>
+                <p class="tax-r" data-tm="tax-cgst-check"><span
+                        data-tm="tax-cgst">CGST</span>: <span
+                        data-tm="tax-cgst-tax">5</span>% <span class="c-curr"></span><span
+                        data-tm="tax-cgst-amount">20.00</span></p>
+                <p class="tax-r" data-tm="tax-sgst-check"><span
+                        data-tm="tax-sgst">SGST</span>: <span
+                        data-tm="tax-sgst-tax">5</span>% <span class="c-curr"></span><span
+                        data-tm="tax-sgst-amount">20.00</span></p>
+                <p class="tax-r">Total: <span class="c-curr"></span><span
+                        data-tm="final-total">440.00</span></p>
+            </div>
+            <div class="col-12 mt-3">
+                <p>PAYMENT MODE: <span data-tm="payment-method">Online</span></p>
+            </div>
+            <div class="col-12 text-center mt-5">
+                <p>LESS PAPER, MORE TREES !!</p>
+                <p>THANK YOU FOR A DELICIOUS MEAL,</p>
+                <p>YOU CAN NOW CALL US ON <span data-tm="cus-number">1800 000000</span>
+                    (TOLL-FREE) FOR
+                    QUERIES/COMPLAINTS.</p>
+            </div>
+        </div>
+    </div>
+</div>`,
     "currency":`<div class="col-12 col-lg-6 mt-5">
                         
     <label for="currency" class="form-label">Currency</label>
