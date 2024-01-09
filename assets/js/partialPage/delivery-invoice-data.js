@@ -1,4 +1,88 @@
 var deliveryInvoiceData = {
+    "logo-image":`  <div com-tm="logo" class="col-12 d-none">
+    <img data-tm="logo" alt="Restaurant Logo"
+        src="../../../../assets/images/delivery-invoice/zomato.png" />
+</div>`,
+"table":`    <table com-tm="tax">
+<thead>
+    <tr>
+        <td>Particulars</td>
+        <td>Gross value</td>
+        <td class="discount-remove"><span
+                data-tm="field-name-discount">Discount</span></td>
+        <td>Net value</td>
+        <td class="cgst-remove"><span data-tm="field-name-cgst">CGST
+                (Rate)</span></td>
+        <td class="cgst-remove">
+            <span data-tm="field-name-cgstinr">CGST </span>
+            <span com-tm="currency">(<span
+                    data-tm="currency"></span>)</span>
+
+        </td>
+        <td class="sgst-remove">
+            <span data-tm="field-name-sgst">SGST
+                (Rate)</span>
+        </td>
+        <td class="sgst-remove">
+            <span data-tm="field-name-sgstinr">SGST </span>
+            <span com-tm="currency">(<span
+                    data-tm="currency"></span>)</span>
+        </td>
+        <td>Total</td>
+    </tr>
+</thead>
+<tbody com-tm="items">
+    <tr class="item item-1">
+        <td><span data-tm="item-quantity">2</span> x <span
+                data-tm="item-name">Crispy Burger</span>
+        </td>
+        <td><span data-tm="item-gross">400.00</span></td>
+        <td class="discount-remove"><span
+                data-tm="field-value-discount">0</span>%</td>
+        <td><span data-tm="item-net">400.00</span></td>
+        <td class="cgst-remove"><span
+                data-tm="field-value-cgst">5</span>%</td>
+        <td class="cgst-remove"><span
+                data-tm="field-value-cgstinr">20.00</span></td>
+        <td class="sgst-remove"><span
+                data-tm="field-value-sgst">5</span>%</td>
+        <td class="sgst-remove"><span
+                data-tm="field-value-sgstinr">20.00</span></td>
+        <td><span data-tm="item-total">440.00</span></td>
+    </tr>
+
+</tbody>
+<tfoot>
+    <tr>
+        <td>Item(s) Total </td>
+        <td data-tm="item-total-bd">400.00</td>
+        <td class="discount-remove"></td>
+        <td data-tm="item-total-ad">400.00</td>
+        <td class="cgst-remove"></td>
+        <td class="cgst-remove" data-tm="item-tatal-cgst">20.00</td>
+        <td class="sgst-remove"></td>
+        <td class="sgst-remove" data-tm="item-tatal-sgst">20.00</td>
+        <td><span data-tm="sub-total">440.00</span></td>
+    </tr>
+    <tr>
+        <td>Total Value</td>
+        <td></td>
+        <td class="discount-remove"></td>
+        <td></td>
+        <td class="cgst-remove"></td>
+        <td class="cgst-remove"></td>
+        <td class="sgst-remove"></td>
+        <td class="sgst-remove"></td>
+        <td><span data-tm="final-total">440.00</span></td>
+    </tr>
+</tfoot>
+</table>`,
+"signature":`  <div class="col-4 sign">
+<div com-tm="signature">
+    <img data-tm="signature" alt="Authorised Signatory" src="../../../../assets/images/restaurant-bill/signature.png" />
+</div>
+<p>Authorised Signatory</p>
+</div>`,
     "template-2":`<div data-tm="template-2" class="templates template-2 rest-tm-container">
     <h6 class='mb-0'>Coming soon</h6>
     </div>`,
