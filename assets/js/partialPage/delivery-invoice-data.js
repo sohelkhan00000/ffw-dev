@@ -1,5 +1,5 @@
 var deliveryInvoiceData = {
-    "logo-image":`  <div com-tm="logo" class="col-12">
+    "logo-image":`  <div com-tm="logo"  class="col-12">
     <img data-tm="logo" alt="Restaurant Logo"
         src="../../../../assets/images/delivery-invoice/zomato.png" />
 </div>`,
@@ -7,6 +7,7 @@ var deliveryInvoiceData = {
 <thead>
     <tr>
         <td>Particulars</td>
+        <td>Unit Price</td>
         <td>Gross value</td>
         <td class="discount-remove"><span
                 data-tm="field-name-discount">Discount</span></td>
@@ -36,6 +37,7 @@ var deliveryInvoiceData = {
         <td><span data-tm="item-quantity">2</span> x <span
                 data-tm="item-name">Crispy Burger</span>
         </td>
+        <td data-tm="item-price">200.00</td>
         <td><span data-tm="item-gross">400.00</span></td>
         <td class="discount-remove"><span
                 data-tm="field-value-discount">0</span>%</td>
@@ -55,6 +57,7 @@ var deliveryInvoiceData = {
 <tfoot>
     <tr>
         <td>Item(s) Total </td>
+        <td></td>
         <td data-tm="item-total-bd">400.00</td>
         <td class="discount-remove"></td>
         <td data-tm="item-total-ad">400.00</td>
@@ -67,6 +70,7 @@ var deliveryInvoiceData = {
     <tr>
         <td>Total Value</td>
         <td></td>
+        <td></td>
         <td class="discount-remove"></td>
         <td></td>
         <td class="cgst-remove"></td>
@@ -77,12 +81,51 @@ var deliveryInvoiceData = {
     </tr>
 </tfoot>
 </table>`,
-"signature":`  <div class="col-4 sign">
+"bottom-data":`           <div class="col-12 mt-3">
+
+<p class="mt-3">Amount <span com-tm="currency" class="d-none"><span
+            data-tm="currency" class="pe-1"></span></span> <span
+        data-tm="final-total">440.00</span> settled through
+    digital mode/payment received.
+</p>
+<p>
+    Supply attracts reverse charge : <span>No</span>
+</p>
+</div>
+
+
+<div class="col-8 last-section">
+
+
+<div com-tm="delivery-platform">
+    <div class="col-12 ">
+        <p data-tm="p-name"> ZOMATO PRIVATE LIMITED</p>
+    </div>
+    <div class="item item-1">
+        <p><span data-tm="field-name">PAN</span> : <span
+                data-tm="field-value">AADCD4946</span></p>
+    </div>
+    <div class="item item-2">
+        <p><span data-tm="field-name">CIN</span> : <span
+                data-tm="field-value">L930398141</span></p>
+    </div>
+    <div class="item item-3">
+        <p><span data-tm="field-name">GST</span> : <span
+                data-tm="field-value">06AAD46L1</span></p>
+    </div>
+    <div class="item item-4">
+        <p><span data-tm="field-name">FSSAI</span> : <span
+                data-tm="field-value">1001908107</span></p>
+    </div>
+</div>
+
+</div>
+<div class="col-4 sign">
 <div com-tm="signature">
     <img data-tm="signature" alt="Authorised Signatory" src="../../../../assets/images/restaurant-bill/signature.png" />
 </div>
 <p>Authorised Signatory</p>
-</div>`,
+</div> `,
     "template-2":`         <div data-tm="template-2" class="templates template-2 rest-tm-container">
     <div class="restaurant-slip">
         <div class="row">
@@ -126,15 +169,15 @@ var deliveryInvoiceData = {
 
 
             </div>
-            <div class="col-5 mt-4">
+            <div class="col-5 mt-3">
                 <p class="dl-from-to"><span>Delivery To:</span></p>
                 <div com-tm="delivery-to">
                     <div class="item item-1">
-                        <p><span data-tm="field-name">Customer Name</span> : <span
+                        <p><span data-tm="field-name">Customer Name : </span><span
                                 data-tm="field-value">Joseph Arimathea</span></p>
                     </div>
                     <div class="item item-2">
-                        <p><span data-tm="field-name">Delivery Address</span> : <span
+                        <p><span data-tm="field-name">Delivery Address : </span><span
                                 data-tm="field-value">3rd Floor, Noida</span></p>
                     </div>
 
@@ -260,6 +303,7 @@ var deliveryInvoiceData = {
 
             </div>
             <div class="col-4 sign">
+            
                 <div com-tm="signature">
                     <img data-tm="signature" url="" alt="Authorised Signatory"
                         src="../../../../assets/images/restaurant-bill/signature.png" />
@@ -270,7 +314,7 @@ var deliveryInvoiceData = {
     </div>
 </div>`,
 
-    "form-control":`      <div  id="test-controls" class="row">
+    "form-control":`      <div  id="dynamic-forms-controls" class="row">
     <div class="col-12">
     <div com-fm="logo" class="com-wrapper">
         <div class="com-container">
@@ -700,7 +744,7 @@ var deliveryInvoiceData = {
   
    
  
-<div class="col-12 mt-3">
+<div class="col-12 mt-4">
 <div com-fm="delivery-platform" class="com-wrapper close">
     <div class="com-container">
         <div class="com-header">
