@@ -50,7 +50,7 @@ var rentReceiptData = {
 
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <p id="receiptDeclar">Received a sum of INR <span data-tm="rent"
+                                <p id="receiptDeclar">Received a sum of <span com-tm="currency" class="d-none"><span data-tm="currency" class="pe-1"></span></span><span data-tm="rent"
                                         class="rent"></span>
                                     from
                                     <span data-tm="renter-name" class="renter-name"> </span>
@@ -65,15 +65,13 @@ var rentReceiptData = {
 
                         </div>
                         <div class="row">
-                            <div class="col-6 col-md-6">
+                            <div class="col-8">
                                 <p id="landlord"><span class="landlord-name" data-tm="landlord-name"></span>
-                                    (Landlord),
-
-                                    Pan: <span class="landlord-pan" data-tm="landlord-pan"></span>
+                                    (Landlord)<span data-tm="pan-switch" class='d-none'>,  PAN: <span class="landlord-pan" data-tm="landlord-pan"></span></span>
                                 </p>
                             </div>
-                            <div class="col-6 col-md-6">
-                                <div class="revenue">
+                            <div class="col-4">
+                                <div data-tm="revnue-stamp" class="revenue d-none">
                                     <p>Revenue stamp</p>
                                 </div>
                             </div>
