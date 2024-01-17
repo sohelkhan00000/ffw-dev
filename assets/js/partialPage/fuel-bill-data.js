@@ -1,28 +1,49 @@
 var template ={
         "logo-tm":`   <div com-tm="logo">
-        <img data-tm="logo" class="logo" alt="Restaurant Logo" src="../../../../assets/images/bill/pump-logo-bharat-petroleum.webp">
+        <img data-tm="logo" class="logo" alt="Fuel Bill Logo" src="../../../../assets/images/bill/pump-logo-bharat-petroleum.webp">
     </div>`,
-        "logo":`  <div class="col-12">
+        "logo":`    <div class="col-12">
         <div com-fm="logo" class="com-wrapper">
             <div class="com-container">
                 <div class="com-header d-none">
-                    <button title="Toggle Tab" class="com-close"><i class="bi bi-dash bi-plus"></i></button>
+                    <div class="row">
+                        <div class="col-8">
+                            <label class="form-label">Logo</label>
+                        </div>
+                        <div class="col-4 text-end">
+                            <button title="Toggle Tab" class="com-close"><i class="bi bi-dash bi-plus"></i></button>
+                        </div>
+                    </div>
+    
+    
                 </div>
-                <div class="custom-box">
+                <!-- <div class="custom-box"> -->
                     <div class="com-sub-header">
-                        <div class="row">
-                           
-                            <div class="col-auto ps-0">
-                                <div class="form-switch form-check mb-0" title="Remove Logo">
-                                    <input id="logo-disable" class="form-check-input com-disable" checked type="checkbox">
-                                    <label for="logo-disable" class="form-check-label">Logo</label>
-                                </div>
-        
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <label class="form-label fw-bold mb-0">Logo</label>
                             </div>
+                            <div class="col-auto">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <button class="com-clear"><i class="bi bi-eraser"></i>
+                                            <span class="ps-1">Clear</span></button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check mb-0" title="Remove Logo">
+                                            <input id="logo-disable" class="form-check-input com-disable" type="checkbox">
+                                            <label for="logo-disable" class="form-check-label">Disable</label>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
                         </div>
                     </div>
                     <div class="com-body">
-                        <div class="row pt-4">
+                        <div class="row pt-2">
                             <div class="col-12 col-lg-6">
                                 <div class="form-check">
                                     <input class="form-check-input" checked id="pump-logo-bharat-petroleum" name="fs-logo"
@@ -69,16 +90,12 @@ var template ={
                         </div>
         
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </div>`,
     "form-controls":`
-    <div class="col-md-12 mt-3">
-        <label for="fs-address" class="form-label">Address</label>
-        <textarea class="form-control" id="fs-address" rows="3"></textarea>
-        
-    </div>
+  
     <div class="col-lg-6 col-md-12 mt-3">
         <label for="fs-fuel-rate" class="form-label">Fuel Rate</label>
         <input class="form-control" id="fs-fuel-rate" type="number" />
@@ -137,7 +154,10 @@ var template ={
     </div>
 
 
+    <div class="col-12 mt-3">
+        <div class="row">
 
+      
 
     <div class="col-md-3 mt-3 gst-wrapper">
         <div class="form-check">
@@ -166,7 +186,10 @@ var template ={
     <div class="col-md-12 mt-3 mb-3 gst-wrapper">
         <input class="form-control d-none" id="vat-number" type="text" value="06AAMPY6980B1Z8" />
     </div>
-    <div class="col-12 mt-3">
+    </div>
+    </div>
+
+    <div class="col-12">
         <label for="fs-thank-you" class="form-label">Thank You</label>
         <textarea class="form-control" id="fs-thank-you">****************<br>Thank You! Visit Again<br> Save Fuel, Save Money.
         </textarea>
@@ -174,7 +197,7 @@ var template ={
     <div class="col-12 mt-3">
         <div com-fm="currency" class="com-wrapper">
             <div class="com-container">
-                <div class="com-header">
+                <div class="com-header d-none">
                     <div class="row">
                         <div class="col-8">
                             <label class="form-label">Currency</label>
@@ -187,8 +210,11 @@ var template ={
 
                 </div>
                 <div class="com-sub-header">
-                    <div class="row">
-                        <div class="col-12">
+                    <div class="row justify-content-between">
+                    <div class="col-auto">
+                    <label class="form-label fw-bold mb-0">Currency</label>
+                </div>
+                        <div class="col-auto">
                             <div class="float-end form-check mb-0">
                                 <input id="currency-disable" class="form-check-input com-disable" type="checkbox">
                                 <label for="currency-disable" class="form-check-label">Disable</label>
@@ -408,7 +434,7 @@ var template ={
     "code" : `    <div class="bill">
    
     <div com-tm="logo">
-    <img data-tm="logo" class="logo" alt="Restaurant Logo" src="../../../../assets/images/bill/pump-logo-bharat-petroleum.webp">
+    <img data-tm="logo" class="logo" alt="Fuel Bill Logo" src="../../../../assets/images/bill/pump-logo-bharat-petroleum.webp">
 </div>
 
     <img class="side-logo1" src="https://freeforonline.com/assets/images/bill/side-logo.webp" />
@@ -442,7 +468,7 @@ var template ={
 "js" : 'js',
 "template-3":`           <div class="bill">
 <div com-tm="logo">
-<img data-tm="logo" class="logo" alt="Restaurant Logo" src="../../../../assets/images/bill/pump-logo-bharat-petroleum.webp">
+<img data-tm="logo" class="logo" alt="Fuel Bill Logo" src="../../../../assets/images/bill/pump-logo-bharat-petroleum.webp">
 </div>
 <div class="pt-5 pb-5">
 
