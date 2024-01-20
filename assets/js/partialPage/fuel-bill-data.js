@@ -130,7 +130,7 @@ var template ={
         <!-- select box -->
 
         <label for="u-vehicle-type" class="form-label">Vehicle Type</label>
-        <select class="form-control" id="u-vehicle-type">
+        <select class="form-select" id="u-vehicle-type">
             <option>Petrol</option>
             <option>Deisel</option>
             <option>CNG</option>
@@ -140,7 +140,7 @@ var template ={
     </div>
     <div class="col-lg-6 col-md-12 mt-3">
         <label for="u-payment-type" class="form-label">Payment Type</label>
-        <select class="form-control" id="u-payment-type">
+        <select class="form-select" id="u-payment-type">
             <option>Cash</option>
             <option>Online</option>
             <option>Debit Card</option>
@@ -190,7 +190,7 @@ var template ={
     </div>
 
     <div class="col-12">
-        <label for="fs-thank-you" class="form-label">Thank You</label>
+        <label for="fs-thank-you" class="form-label">Bottom Text</label>
         <textarea class="form-control" id="fs-thank-you">****************<br>Thank You! Visit Again<br> Save Fuel, Save Money.
         </textarea>
     </div>
