@@ -47,7 +47,7 @@ var dsData = {
         <p>
 
 
-            Received a sum of <span com-tm="currency" data-tm="currency">INR</span> <span class="ds-salary-amount fw-bold"
+            Received a sum of <span com-tm="currency" data-tm="currency"></span> <span class="ds-salary-amount fw-bold"
                 data-tm="ds-salary-amount"></span><span class="fw-bold">/-</span> only
             for the <span class="ds-month fw-bold" data-tm="ds-month"></span> month from Mr
             / Mrs.
@@ -102,7 +102,7 @@ Vehicle No: <span data-tm="ds-vehical-number"
 </p>
 <p>
     Received a sum of <span com-tm="currency" data-tm="currency"
-        >INR</span> <span class="ds-salary-amount fw-bold"
+        ></span> <span class="ds-salary-amount fw-bold"
         data-tm="ds-salary-amount"></span><span class="fw-bold">/-</span> only
     for the <span class="ds-month fw-bold" data-tm="ds-month"></span> month from Mr
     / Mrs.
@@ -242,8 +242,8 @@ Vehicle No: <span data-tm="ds-vehical-number"
     
                     <div class="col-12">
                         <div class="currency-box-wrap">
-                            <label for="search-currency" class="form-label">Search</label>
-                            <input data-fm="search-currency" id="search-currency" placeholder='Country name...' type="text" class="form-control">
+                            <label for="search-currency" class="form-label label-none">Search</label>
+                            <input data-fm="search-currency" id="search-currency" placeholder='Search country' type="text" class="form-control">
                  
                             <div class="search-currency-box d-none" data-fm="search-currency-box">
                             </div>
@@ -251,7 +251,7 @@ Vehicle No: <span data-tm="ds-vehical-number"
     
                     </div>
                     <div class="col-12 mt-3">
-                        <label for="select-currency" class="form-label">OR Select</label>
+                        <label for="select-currency" class="form-label label-none">OR Select</label>
                         <select data-fm="select-currency" id="select-currency" class="form-select">
                             <option value="">Select Currency</option>
                             <option value="AFN">Afghan Afghani - ؋</option>
@@ -422,14 +422,14 @@ Vehicle No: <span data-tm="ds-vehical-number"
                     </div>
                     <div class="col-6 mt-3">
                         <div class="form-check">
-                            <input data-fm="currency-code" id="currency-code" name="currency-type" type="radio"
+                            <input checked data-fm="currency-code" id="currency-code" name="currency-type" type="radio"
                                 class="form-check-input">
                             <label for="currency-code" class="form-check-label">Code</label>
                         </div>
                     </div>
                     <div class="col-6 mt-3">
                         <div class="form-check">
-                            <input checked id="currency-symbol" data-fm="currency-symbol" name="currency-type" type="radio"
+                            <input  id="currency-symbol" data-fm="currency-symbol" name="currency-type" type="radio"
                                 class="form-check-input">
                             <label for="currency-symbol" class="form-check-label">Symbol</label>
                         </div>
