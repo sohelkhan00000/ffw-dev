@@ -80,7 +80,27 @@ var dsData = {
 
     </div>
 </div>`,
-    "tm-control": `                       <p>
+    "tm-control": `               <p class="fw-bold">Employee Name: <span data-tm="ds-employee-name"
+    class="ds-employee-name fw-normal"></span></p>
+<p class="fw-bold mb-4">
+Date: <span data-tm="ds-date" class="ds-date fw-normal"></span>
+</p>
+<p class="fw-bold text-center header-two">Receipt Acknowledgment</p>
+<p class="fw-bold">
+Date of Receipt: <span data-tm="ds-date" class="ds-date fw-normal"></span>
+</p>
+<p class="fw-bold">
+For the Month of: <span data-tm="ds-month" class="ds-month fw-normal"></span>
+</p>
+<p class="fw-bold">
+Name of Driver: <span data-tm="ds-driver-name"
+    class="ds-driver-name fw-normal"></span>
+</p>
+<p class="fw-bold">
+Vehicle No: <span data-tm="ds-vehical-number"
+    class="ds-vehical-number fw-normal"></span>
+</p>
+<p>
     Received a sum of <span com-tm="currency" data-tm="currency"
         >INR</span> <span class="ds-salary-amount fw-bold"
         data-tm="ds-salary-amount"></span><span class="fw-bold">/-</span> only
