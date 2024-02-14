@@ -57,8 +57,10 @@ data-bs-target="#lta-bill-modal" id="lta-bill-modal-view">
 
 </button>`,
 "close-modal":``,
-"logo":`<img data-tm="lta-logo" alt="Red Bus" width="100px" title="A Red Bus Logo" class="bus-logo"
-src="${server.imagePath}/lta-bill/logo-red-bus.png" />`,
+"logo":` <div com-tm="logo">
+<img data-tm="logo" alt="Red Bus" width="100px" title="A Red Bus Logo" class="bus-logo"
+src="${server.imagePath}/lta-bill/logo-red-bus.png" />
+</div>`,
 "click-here":`<span class="d-block">
 Write to us <a href="#">here</a>
 </span>`,
@@ -240,7 +242,7 @@ Write to us <a href="#">here</a>
 
 <div class="col-6 col-md-6 mt-3">
     <label for="travel-type" class="form-label">Travel Type</label>
-    <select id="travel-type" class="form-control">
+    <select id="travel-type" class="form-select">
         <option>Select One</option>
         <option value="Sleeper">Sleeper</option>
         <option value="AC Sleeper">AC Sleeper</option>
