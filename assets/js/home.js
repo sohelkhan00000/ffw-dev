@@ -1,1 +1,1 @@
-var home=()=>{document.querySelector("#sb-search")&&document.querySelector("#sb-search").focus()};
+var home=()=>{document.querySelector("#sb-search")&&document.querySelector("#sb-search").focus()};home();
