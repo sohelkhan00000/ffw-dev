@@ -1,1 +1,0 @@
-var dragScroller=e=>{const t=document.querySelector("#"+e);let n=!1,o,r;function s(e){n=!1}t.addEventListener("mousemove",e=>{e.preventDefault(),n&&(e=e.pageX-t.offsetLeft-o,t.scrollLeft=r-e)}),t.addEventListener("mousedown",function(e){n=!0,o=e.pageX-t.offsetLeft,r=t.scrollLeft},!1),t.addEventListener("mouseup",s,!1),t.addEventListener("mouseleave",s,!1)};
